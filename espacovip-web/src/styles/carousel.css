@@ -1,0 +1,10 @@
+.carousel-container {
+    max-width: 800px; /* Ajuste a largura máxima do carousel */
+    margin: 0 auto; /* Centraliza o carousel horizontalmente */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
