@@ -109,7 +109,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5em;
+  gap: 3em;
   padding: 3em 5em;
 }
 
@@ -118,28 +118,29 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 300px;
-  border: 2px solid black;
+  width: 100em;
+  max-width: 450px;
   border-radius: 5px;
 }
 
 .icon-cards {
   width: 4em;
   height: auto;
-  padding: 2em 0;
+  padding: 3em 0;
   color: black;
 }
 
 .contactus-container h1 {
   color: black;
   font-size: 2em;
+  font-weight: bold;
 }
 
 .contactus-container p {
   color: black;
   padding: 1em 2em;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .contactus-container button {
@@ -191,44 +192,9 @@ footer h1 {
 
 /* Responsividade */
 
-/* @media (max-width: 1200px) {
+@media (max-width: 500px) {
   .aboutus-container {
-    padding: 3em 4em;
-  }
-}
-
-@media (max-width: 992px) {
-  .aboutus-container {
-    padding: 2em 2em;
-  }
-
-  .main-container h1 {
-    font-size: 2em;
-  }
-
-  .contactus-container {
-    padding: 2em;
-    gap: 1em;
-  }
-}
-
-@media (max-width: 768px) {
-  .aboutus-container {
-    padding: 2em;
-  }
-
-  .photos-area {
-    flex-direction: column;
-  }
-
-  .main-container h1 {
-    font-size: 1.5em;
-  }
-} */
-
-/* @media (max-width: 500px) {
-  .aboutus-container {
-    padding: 3em 5em; 
+    padding: 3em 3em; 
   }
 
   .main-container h1 {
@@ -243,12 +209,15 @@ footer h1 {
     padding: 2em 0;
   }
 
-  .cards {
-
+  .contactus-container button {
+    width: 13em;
   }
 
-} */
+  .carousel-caption {
+    color: red;
+  }
 
+}
 
 .aboutus-title,
 .aboutus-title h1,
