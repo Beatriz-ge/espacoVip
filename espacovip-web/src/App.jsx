@@ -5,8 +5,9 @@ import { IoMdInformationCircle } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import Carousel from './components/carousel'
-
+import CarouselIn from './components/carousel-in.jsx'
+import CarouselOut from './components/carousel-out.jsx'
+import { TbPhoto } from "react-icons/tb";
 
 function App() {
   return (
@@ -17,14 +18,14 @@ function App() {
           <h1 className='logo-title'>ESPAÇO VIP</h1>
         </nav>
 
-        <div className='container'>
-          <img src={home} alt="home"/>
+        <div className='main-container'>
+          <img src={home}/>
           <h1>O LUGAR CERTO PARA O SEU EVENTO!</h1>
           <button>FALE CONOSCO</button>
         </div>
 
         <div className='aboutus-container'>
-          <div className='aboutus'>
+          <div className='aboutus-title'>
             <IoMdInformationCircle className='icon-store'/>
             <h1>SOBRE NÓS</h1>
           </div>
@@ -32,37 +33,57 @@ function App() {
           Ficamos localizados no setor de chácaras do Valparaíso.</p>
         </div>
 
-        <div className='contactus'>
-          <div className='location'>
-            <IoLocationOutline className='icon-contact'/>
+        <div className='contactus-container'>
+          <div className='card'>
+            <IoLocationOutline className='icon-cards'/>
             <h1>LOCALIZAÇÃO</h1>
             <p>Acesse nossa localização pelo Google Maps</p>
             <button>GOOGLE MAPS</button>
           </div>
-          <div className='insta'>
-            <FaInstagram className='icon-contact'/>
+          <div className='card'>
+            <FaInstagram className='icon-cards'/>
             <h1>INSTAGRAM</h1>
-            <p>Nós acompanhe pelo Instagram</p>
+            <p>Nós acompanhe pelo nosso Instagram</p>
             <button>INSTAGRAM</button>
           </div>
-          <div className='whatsapp'>
-            <FaWhatsapp className='icon-contact'/>
+          <div className='card'>
+            <FaWhatsapp className='icon-cards'/>
             <h1>WHATSAPP</h1>
             <p>Clique para iniciar uma conversa conosco</p>
             <button>WHATSAPP</button>
           </div>
         </div>
 
-        <div className='space'>
-          <div className='intern-area'>
-            <h1>ÁREA INTERNA</h1>
-            <p>Conheça a nossa casa</p>
-            <Carousel />
-
+        <div className='aboutus-container'>
+          <div className='aboutus-title '>
+            <TbPhoto className='icon-store'/>
+            <h1>NOSSO ESPAÇO</h1>
           </div>
 
+          <div className='photos-area'>
+            <div className='photo-section'>
+              <h2>ÁREA INTERNA</h2>
+              <p>Conheça a nossa casa</p>
+              <CarouselIn />
+            </div>
+            <div className='photo-section extern'>
+              <h2>ÁREA EXTERNA</h2>
+              <p>Conheça a nossa área de lazer</p>
+              <CarouselOut />
+            </div>
+          </div>
         </div>
 
+        <footer>
+          <div>
+            <h1>ENDEREÇO</h1>
+            <p>Rua Esperança Quadra 02 Chácara 06 - Valparaíso de Goiás</p>
+          </div>
+          <div>
+            <h1>TELEFONE</h1>
+            <p>61 99959-1003</p>
+          </div>
+        </footer>
     </div>
   )
 }
