@@ -1,10 +1,52 @@
+.d-flex {
+  background-color: white;
+}
+
 .carousel-container {
-    max-width: 800px; /* Ajuste a largura máxima do carousel */
-    margin: 0 auto; /* Centraliza o carousel horizontalmente */
-  }
-  
-  .carousel-item img {
-    width: 100%; /* Ajusta a largura da imagem ao contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-  }
-  
+  max-width: 800px; 
+  height: auto; 
+  margin-bottom: 3em;
+}
+
+.carousel-inner img {
+  width: 100%; 
+  height: auto; 
+}
+
+.carousel-caption {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.carousel-caption h5 {
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.carousel-gap {
+  background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
