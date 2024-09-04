@@ -1,6 +1,6 @@
 import './App.css'
 import logo from './assets/logo.png';
-import home from './assets/example.jpg';
+import Piscina1 from './assets/piscina/piscina7.jpeg';
 import { IoMdInformationCircle } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
@@ -19,9 +19,11 @@ function App() {
         </nav>
 
         <div className='main-container'>
-          <img src={home}/>
+          <img src={Piscina1}/>
           <h1>O LUGAR CERTO PARA O SEU EVENTO!</h1>
-          <button>FALE CONOSCO</button>
+          <a href="https://wa.me/5561999591003?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20Espaço%20de%20VIP" target="_blank">
+            <button class="whatsapp-button">FALE CONOSCO</button>
+          </a>
         </div>
 
         <div className='aboutus-container'>
@@ -38,19 +40,25 @@ function App() {
             <IoLocationOutline className='icon-cards'/>
             <h1>LOCALIZAÇÃO</h1>
             <p>Acesse nossa localização pelo Google Maps</p>
-            <button>GOOGLE MAPS</button>
+            <a href="https://maps.app.goo.gl/eiqWwFh5YL1aKZnQ6" target="_blank">
+              <button class="maps-button">GOOGLE MAPS</button>
+            </a>
           </div>
           <div className='card'>
             <FaInstagram className='icon-cards'/>
             <h1>INSTAGRAM</h1>
             <p>Nós acompanhe pelo nosso Instagram</p>
-            <button>INSTAGRAM</button>
+            <a href="https://www.instagram.com/eventos.espacovip/" target="_blank">
+              <button class="instagram-button">INSTAGRAM</button>
+            </a>
           </div>
           <div className='card'>
             <FaWhatsapp className='icon-cards'/>
             <h1>WHATSAPP</h1>
             <p>Clique para iniciar uma conversa conosco</p>
-            <button>WHATSAPP</button>
+            <a href="https://wa.me/5561999591003?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20Espaço%20de%20VIP" target="_blank">
+              <button class="whatsapp-button">WHATSAPP</button>
+            </a>
           </div>
         </div>
 
