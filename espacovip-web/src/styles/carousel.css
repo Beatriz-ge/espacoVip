@@ -28,8 +28,25 @@
   background-color: white;
 }
 
+.carousel-indicators {
+  background-color: #FA9C0E;
+}
 
 
+@media (max-width: 500px) {
+  .carousel-container {
+    max-width: 100vw; 
+  }
+
+  .carousel-inner img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .carousel-caption h5 {
+    font-size: 0.8em;
+  }
+}
 
 
 
