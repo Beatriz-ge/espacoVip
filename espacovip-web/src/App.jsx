@@ -3,21 +3,24 @@ import logo from './assets/logo.png';
 import Piscina1 from './assets/piscina/piscina7.jpeg';
 import { IoMdInformationCircle } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
+import { IoMdPricetags } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
-import CarouselIn from './components/carousel-in.jsx'
-import CarouselOut from './components/carousel-out.jsx'
+import CarouselIn from './components/carousel-in.jsx';
+import CarouselOut from './components/carousel-out.jsx';
+import Accordion from './components/accordion.jsx';
 import { TbPhoto } from "react-icons/tb";
 
 function App() {
   return (
     <div>
-
+{/* Navbar */}
         <nav className='nav'> 
           <img className='logo-img' src={logo} alt="logo"/>
           <h1 className='logo-title'>ESPAÇO VIP</h1>
         </nav>
 
+{/* Imagem principal */}
         <div className='main-container'>
           <img src={Piscina1}/>
           <h1>O LUGAR CERTO PARA O SEU EVENTO!</h1>
@@ -26,6 +29,7 @@ function App() {
           </a>
         </div>
 
+{/* Texto sobre nós */}
         <div className='aboutus-container'>
           <div className='aboutus-title'>
             <IoMdInformationCircle className='icon-store'/>
@@ -35,6 +39,18 @@ function App() {
           Ficamos localizados no setor de chácaras do Valparaíso.</p>
         </div>
 
+{/* Valores aluguel */}
+        <div className='aboutus-container'>
+          <div className='aboutus-title'>
+            <IoMdPricetags className='icon-store'/>
+            <h1>VALORES ALUGUEL</h1>
+          </div>
+          <Accordion/>
+          
+        </div>
+
+
+{/* Cartões  */}
         <div className='contactus-container'>
           <div className='card'>
             <IoLocationOutline className='icon-cards'/>
@@ -62,6 +78,7 @@ function App() {
           </div>
         </div>
 
+{/* Nosso espaço */}
         <div className='aboutus-container'>
           <div className='aboutus-title '>
             <TbPhoto className='icon-store'/>
@@ -81,7 +98,8 @@ function App() {
             </div>
           </div>
         </div>
-
+        
+{/* Footer */}
         <footer>
           <div>
             <h1>ENDEREÇO</h1>
