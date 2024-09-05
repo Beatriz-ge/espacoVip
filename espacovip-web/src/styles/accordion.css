@@ -1,0 +1,30 @@
+b,
+.accordion-body,
+.accordion-body p {
+    background-color: white;
+
+}
+
+.accordion-body {
+    line-height: 1em;
+}
+
+.accordion-button {
+    color: #000;
+}
+  
+.accordion-button:not(.collapsed) {
+    background-color: #ff950b; 
+    color: #000; 
+}
+
+.accordion {
+    color: white;
+    background-color: white;
+}
+
+.accordion-button:not(.collapsed) b {
+    background-color: #ff950b;
+    color: white;
+}
+  
