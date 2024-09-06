@@ -1,14 +1,12 @@
 /* index.css */
-
 * {
-  background-color: rgb(255, 202, 57);
+  background-color: rgb(253, 191, 18);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Estilos para navbar */
-
 .nav {
   display: flex;
   align-items: center;
@@ -34,7 +32,6 @@
 }
 
 /* Estilos para imagem principal */
-
 .main-container {
   position: relative;
   display: flex;
@@ -81,18 +78,25 @@
   padding: 0.5em 1em;
   font-size: 1em;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
 }
 
 /* Estilos para container sobre nós */
-
 .aboutus-container {
   padding: 3em 8em;
   background-color: white;
+}
+
+.aboutus-container p {
+  text-align: justify;
+}
+
+.aboutus-container p{
+  margin-bottom: 2em;
 }
 
 .aboutus-title {
@@ -100,14 +104,9 @@
   align-items: center;
 }
 
-.aboutus-title h1 {
-  font-size: 2em;
-  margin-top: 0.3em;
-}
-
-.aboutus-p {
-  font-size: 2em;
-  text-align: justify;
+.aboutus-container h1,
+.rental-value h1 {
+  font-size: 1.5em;
 }
 
 .icon-store {
@@ -117,7 +116,6 @@
 }
 
 /* Estilos para os cartões */
-
 .contactus-container {
   display: flex;
   flex-wrap: wrap;
@@ -127,7 +125,6 @@
 }
 
 .card {
-  background-color: white;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -166,7 +163,6 @@
 }
 
 /* Imagem do componente carousel  */
-
 .photos-area {
   display: flex;
   flex-direction: column;
@@ -208,7 +204,6 @@ footer p {
 }
 
 /* Responsividade */
-
 @media (max-width: 500px) {
 
   /* About us */
@@ -230,7 +225,7 @@ footer p {
 
   /* Main container */
   .main-container button {
-    margin-top: 2.5em;
+    margin-top: 1em;
   }
 
   .main-container h1 {
@@ -256,7 +251,6 @@ footer p {
     margin-left: -2em;
   }
 
-  /* Contact us */
   .contactus-container {
     padding: 2em 0;
   }
@@ -275,8 +269,12 @@ footer p {
     font-size: 0.7em;
   }
 
-  /* Photos */
+  /* Rules */
+  .obs {
+    padding: 2em;
+  }
 
+  /* Photos */
   .photo-section h2 {
     font-size: 1.2em;
     font-weight: bold;
@@ -287,9 +285,10 @@ footer p {
   }
 }
 
-.aboutus-title,
-.aboutus-title h1,
+.aboutus-container h1,
+.aboutus-container p,
 .aboutus-p,
+.aboutus-title,
 .icon-store,
 .icon-cards,
 .contactus-container h1,
@@ -297,6 +296,8 @@ footer p {
 .photos-area,
 .photos-area h2,
 .photo-section,
-.card a {
+.card,
+.card a,
+.rental {
   background-color: white;
 }

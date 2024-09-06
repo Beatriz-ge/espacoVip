@@ -1,15 +1,12 @@
 import './App.css'
 import logo from './assets/logo.png';
 import Piscina1 from './assets/piscina/piscina7.jpeg';
-import { IoMdInformationCircle } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
-import { IoMdPricetags } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import CarouselIn from './components/carousel-in.jsx';
 import CarouselOut from './components/carousel-out.jsx';
 import Accordion from './components/accordion.jsx';
-import { TbPhoto } from "react-icons/tb";
 
 function App() {
   return (
@@ -31,24 +28,10 @@ function App() {
 
 {/* Texto sobre nós */}
         <div className='aboutus-container'>
-          <div className='aboutus-title'>
-            <IoMdInformationCircle className='icon-store'/>
-            <h1>SOBRE NÓS</h1>
-          </div>
-          <p className='aboutus-p'>Bem-vindo ao Espaço Vip. Oferecemos o cenário perfeito para seus eventos especiais. Com uma ampla área de lazer, nossa chácara possui piscina, churrasqueira, mesa de sinuca, parquinho e área interna, garantindo momentos inesquecíveis para você e seus convidados. Conte conosco para transformar seu evento em uma experiência única. 
-          Ficamos localizados no setor de chácaras do Valparaíso.</p>
+          <h1>SOBRE NÓS</h1>
+            <p>Bem-vindo ao Espaço Vip. Oferecemos o cenário perfeito para seus eventos especiais. Com uma ampla área de lazer, nossa chácara possui piscina, churrasqueira, mesa de sinuca, parquinho e área interna, garantindo momentos inesquecíveis para você e seus convidados. Conte conosco para transformar seu evento em uma experiência única. 
+            Ficamos localizados no setor de chácaras do Valparaíso.</p>
         </div>
-
-{/* Valores aluguel */}
-        <div className='aboutus-container'>
-          <div className='aboutus-title'>
-            <IoMdPricetags className='icon-store'/>
-            <h1>VALORES ALUGUEL</h1>
-          </div>
-          <Accordion/>
-          
-        </div>
-
 
 {/* Cartões  */}
         <div className='contactus-container'>
@@ -78,10 +61,28 @@ function App() {
           </div>
         </div>
 
+{/* Valores do aluguel */}
+        <div className='aboutus-container'>
+          <h1>VALORES ALUGUEL</h1>
+          <Accordion/>
+        </div>
+
+{/* Observações */}
+        <div>
+          <div className='obs'>
+              <h1>OBSERVAÇÕES</h1>
+                <p>- O aluguel é limitado a 100 pessoas.</p>
+                <p>- Para inclusão do aluguel com a área interna (casa), acrescenta-se R$500,00 a mais ao valor da locação.</p>
+                <p>- Locação com a inclusão da casa limita-se a 50 pessoas.</p>
+                <p>- Não é permitido cobrança de bilhetria.</p>
+                <p>- Não é permitido comercialização de bebidas alcoólicas.</p>
+                <p>- O pagamento é feito com 50% do valor no ato da reserva, e 50% no dia do evento.</p>
+            </div>
+        </div>
+
 {/* Nosso espaço */}
         <div className='aboutus-container'>
           <div className='aboutus-title '>
-            <TbPhoto className='icon-store'/>
             <h1>NOSSO ESPAÇO</h1>
           </div>
 
@@ -110,6 +111,7 @@ function App() {
             <p>61 99959-1003</p>
           </div>
         </footer>
+        
     </div>
   )
 }
