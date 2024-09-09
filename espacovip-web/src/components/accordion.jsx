@@ -28,7 +28,7 @@ function Accordion() {
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>Sábado e domingo:</p>
-                  <p>- Valor Diária: R$ 1000,00</p>
+                  <p>- Valor Fim de Semana: R$ 1000,00</p>
                   <p>- Entrada no sábado às 08h</p>
                   <p>- Saída no domingo às 20h</p>
                   <p>Valores referentes somente a locação externa</p>
@@ -44,7 +44,7 @@ function Accordion() {
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <p>Todos os dias:</p>
-                  <p>- Valor Diária: R$ 850,00</p>
+                  <p>- Valor Período: R$ 850,00</p>
                   <p>- Entrada às 22h</p>
                   <p>- Saída às 06h</p>
                   <p>Valores referentes somente a locação externa</p>

@@ -121,13 +121,13 @@ function Carousel() {
             <div className="carousel-item">
               <img src={Parquinho1} className="d-block w-100" alt="Parquinho 1" />
               <div className="carousel-caption">
-                <h5>Parquinho</h5>
+                <h5>Playground</h5>
               </div>
             </div>
             <div className="carousel-item">
               <img src={Parquinho2} className="d-block w-100" alt="Parquinho 2" />
               <div className="carousel-caption">
-                <h5>Parquinho</h5>
+                <h5>Playground</h5>
               </div>
             </div>
             <div className="carousel-item">

@@ -29,7 +29,7 @@ function App() {
 {/* Texto sobre nós */}
         <div className='aboutus-container'>
           <h1>SOBRE NÓS</h1>
-            <p>Bem-vindo ao Espaço Vip. Oferecemos o cenário perfeito para seus eventos especiais. Com uma ampla área de lazer, nossa chácara possui piscina, churrasqueira, mesa de sinuca, parquinho e área interna, garantindo momentos inesquecíveis para você e seus convidados. Conte conosco para transformar seu evento em uma experiência única. 
+            <p>Bem-vindo ao Espaço Vip. Oferecemos o cenário perfeito para seus eventos especiais. Com uma ampla área de lazer, nossa chácara possui piscina, churrasqueira, mesa de sinuca, playground e área interna, garantindo momentos inesquecíveis para você e seus convidados. Conte conosco para transformar seu evento em uma experiência única. 
             Ficamos localizados no setor de chácaras do Valparaíso.</p>
         </div>
 
